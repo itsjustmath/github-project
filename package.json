@@ -4,7 +4,7 @@
   "description": "Justin's Github Project",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp sass:watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
