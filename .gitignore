@@ -1,3 +1,7 @@
+# build stuff
+build/
+build/*.css
+
 # Logs
 logs
 *.log
