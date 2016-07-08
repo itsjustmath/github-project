@@ -4,7 +4,7 @@
 // --------------------------------------------------------
 
 .masthead {
-  background: $color-blue-indigo;
+  background: transparent;
 }
 
 .masthead-logo {
@@ -23,7 +23,13 @@
 }
 
 .masthead-btn {
+  background-color: $color-transparent;
+  border-color: $color-white;
+  color: $color-white;
   margin-left: 15px;
 
-  &:hover { border-color: $color-white; }
+  &:hover {
+    background-color: $color-white;
+    color: $color-blue-indigo;
+  }
 }
