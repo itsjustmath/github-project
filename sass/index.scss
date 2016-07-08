@@ -1,7 +1,20 @@
 
-@import "base/topcoat.scss";
+// -------------------------
+// Stylesheets
+// -------------------------
 
-body {
-  font-family: sans-serif;
-  font-size: 18px;
-}
+// Libs
+@import "primer-css/index.scss";
+@import "octicons/index.scss";
+
+// Base Styles
+@import "base/variables";
+@import "base/utilities";
+@import "base/layout";
+@import "base/typography";
+@import "base/flexbox";
+
+// Components
+@import "components/masthead";
+@import "components/jumbotron";
+@import "components/cards";

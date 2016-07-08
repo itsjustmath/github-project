@@ -1,0 +1,38 @@
+
+// --------------------------------------------------------
+// Jumbotron
+// --------------------------------------------------------
+
+.hero { background: radial-gradient(ellipse farthest-side at 100% 100%, #42C8DC 0%, #25A4CF 30%, #2E64A6 120%); }
+
+.jumbotron {
+  color: $color-white;
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
+
+.jumbotron-header {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.jumbotron-search {
+  margin-bottom: 1rem;
+
+  .input-lg { padding: 8px 10px; }
+}
+
+.jumbotron-links {
+  text-align: center;
+  letter-spacing: .25px;
+  opacity: .9;
+
+  a {
+    font-weight: normal;
+    color: $color-white;
+    text-decoration: underline;
+  }
+}

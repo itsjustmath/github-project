@@ -1,0 +1,35 @@
+
+// --------------------------------------------------------
+// Masthead
+// --------------------------------------------------------
+
+.masthead {
+  background: transparent;
+}
+
+.masthead-logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+  line-height: 1;
+
+  &:hover { opacity: .9; }
+}
+
+.masthead-nav {
+  float: right;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.masthead-btn {
+  background-color: $color-transparent;
+  border-color: $color-white;
+  color: $color-white;
+  margin-left: 15px;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-blue-indigo;
+  }
+}
