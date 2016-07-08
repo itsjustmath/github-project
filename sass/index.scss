@@ -1,12 +1,17 @@
+
+// -------------------------
+// Stylesheets
+// -------------------------
+
 // Libs
 @import "primer-css/index.scss";
 @import "octicons/index.scss";
 
-// New Stuff
-@import "base/topcoat.scss";
+// Base Styles
+@import "base/variables";
+@import "base/utilities";
+@import "base/flexbox.scss";
 
-body {
-  font-family: sans-serif;
-  // font-size: 18px;
-  background: #fcfcfc;
-}
+// Components
+@import "components/masthead";
+@import "components/jumbotron";
