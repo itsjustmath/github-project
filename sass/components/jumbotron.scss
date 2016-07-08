@@ -18,11 +18,17 @@
 }
 
 .jumbotron-search {
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
 }
 
 .jumbotron-links {
   text-align: center;
+  opacity: .9;
 
-  a { font-weight: normal; }
+  a {
+    font-weight: normal;
+    color: $color-white;
+    text-decoration: underline;
+    letter-spacing: .25px;
+  }
 }

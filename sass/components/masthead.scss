@@ -11,10 +11,17 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: inline-block;
+  line-height: 1;
 }
 
 .masthead-nav {
   float: right;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.masthead-btn {
+  margin-left: 15px;
+
+  &:hover { border-color: $color-white; }
 }
