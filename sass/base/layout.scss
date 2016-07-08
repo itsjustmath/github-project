@@ -3,9 +3,41 @@
 // Layout
 // --------------------------------------------------------
 
+// -------------------------
+// Sections
+// -------------------------
+
 section {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 .section-border { border-bottom: 1px solid $color-mercury; }
+
+// -------------------------
+// Lists
+// -------------------------
+
+.list-bulleted {
+  padding-left: 0;
+  list-style-type: none;
+
+  &.columns { margin-left: 0; }
+
+  li {
+    padding-left: 15px;
+
+    &:before {
+      content:"\25CF";
+      color: $color-silver;
+      position: relative;
+      left: -10px;
+    }
+  }
+
+  a { font-weight: normal; }
+}
+
+.list-loose {
+  li { margin-bottom: .75rem; }
+}
