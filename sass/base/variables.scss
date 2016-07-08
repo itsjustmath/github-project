@@ -7,21 +7,38 @@
 // Colors
 // -------------------------
 
+// ------------
+// Brand Colors
+// ------------
+
+$color-blue-indigo: #4078C0;
+$color-mine-shaft: #333;
+
+// ------------
+// Other Colors
+// ------------
+
 $color-transparent: transparent;
 $color-white: #fff;
 $color-alabaster: #fafafa;
 $color-wild-sand: #f5f5f5;
+$color-silver: #bbb;
 $color-mercury: #e3e3e3;
-$color-blue-indigo: #4078C0;
+
 $color-grey-mako: #3C4146;
 $color-black: #000;
 
 
 // -------------------------
-// Typography
+// Media Queries
 // -------------------------
 
-
-// -------------------------
-// Spacing
-// -------------------------
+$portrait-min: 320px;
+$portrait-max: 449px;
+$landscape-min: 450px;
+$landscape-max: 567px;
+$mobile-min: 568px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 991px;
+$desktop-min: 992px;

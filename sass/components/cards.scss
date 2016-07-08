@@ -20,8 +20,12 @@
     color: $color-grey-mako;
     margin-bottom: 0;
   }
+}
 
-  .card-body { padding: 1.5rem; }
+.card-body {
+  padding: 1.5rem;
+
+  .icon { margin-bottom: .5rem; }
 }
 
 .card-header {
@@ -33,5 +37,6 @@
 // -------------------------
 
 .card-sm {
+  margin-bottom: 1rem;
   .card-body { padding: 1rem .75rem; }
 }

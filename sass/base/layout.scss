@@ -4,6 +4,38 @@
 // --------------------------------------------------------
 
 // -------------------------
+// Responsive Styling / Media Queries
+// -------------------------
+
+// ------------
+// Container / Columns
+// ------------
+
+.container { max-width: 100%; }
+
+@media (min-width: $tablet-min) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+}
+
+@media (min-width: $desktop-min) {
+  .container { width: 970px; }
+}
+
+
+
+
+// -------------------------
 // Sections
 // -------------------------
 
