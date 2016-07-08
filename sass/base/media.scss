@@ -21,7 +21,18 @@
 // Icons
 // -------------------------
 
+.icon-inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 .icon-sm {
+  max-height: 24px;
+  width: auto;
+}
+
+.icon-md {
   max-height: 27px;
   width: auto;
 }
