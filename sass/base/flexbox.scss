@@ -1,0 +1,130 @@
+
+// --------------------------------------------------------
+// Flexbox Mixins
+// --------------------------------------------------------
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($value: row) {
+  @if $value == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+  } @else if $value == column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  } @else if $value == column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+  } @else {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+  }
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin flex($fg: 1, $fs: null, $fb: null) {
+
+  // Set a variable to be used by box-flex properties
+  $fg-boxflex: $fg;
+
+  // Box-Flex only supports a flex-grow value so let's grab the
+  // first item in the list and just return that.
+  @if type-of($fg) == 'list' {
+    $fg-boxflex: nth($fg, 1);
+  }
+
+  -webkit-box-flex: $fg-boxflex;
+  -webkit-flex: $fg $fs $fb;
+  -moz-box-flex: $fg-boxflex;
+  -moz-flex: $fg $fs $fb;
+  -ms-flex: $fg $fs $fb;
+  flex: $fg $fs $fb;
+}
+
+@mixin flex-pseudo-space {
+  content: '';
+  display: block;
+  @include flex(1);
+}
+.flex,
+.flex-row {
+  @include display-flex;
+  @include flex-direction(row);
+}
+.flex-column {
+  @include display-flex;
+  @include flex-direction(column);
+}
+.flex0 {
+  @include flex(0,0,auto);
+}
+
+.flex1-0 {
+  @include flex(1,1,0);
+}
+
+@for $i from 1 through 10 {
+  .flex#{$i} {
+    @include flex(#{$i});
+  }
+}
+
+.flex-auto {
+  @include flex(0, 0, auto);
+}
+
+.flex-alignStart {
+  @include display-flex;
+  align-items: flex-start;
+}
+
+.flex-alignCenter {
+  @include display-flex;
+  align-items: center;
+}
+
+.flex-alignRight {
+  align-items: flex-end;
+}
+
+.flex-alignSelfCenter { align-self: center; }
+.flex-alignSelfStart { align-self: flex-start; }
+
+.flex-justifyRight {
+  @include display-flex;
+  justify-content: flex-end;
+}
+
+.flex-mobile-reflow,
+.flex-tablet-reflow,
+.flex-desktop-reflow {
+  @include display-flex;
+  @include flex-direction(column);
+}
+
+@media (min-width: 450px) {
+  .flex-mobile-reflow {
+    @include flex-direction(row);
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-tablet-reflow {
+    @include flex-direction(row);
+  }
+}
+
+@media (min-width: 960px) {
+  .flex-desktop-reflow {
+    @include flex-direction(row);
+  }
+}

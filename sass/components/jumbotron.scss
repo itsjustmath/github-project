@@ -6,13 +6,23 @@
 .jumbotron {
   background: $color-blue-indigo;
   color: $color-white;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .jumbotron-header {
   text-align: center;
   font-weight: normal;
-  font-size: 2.5em;
-  margin-bottom: 1.5em;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.jumbotron-search {
+  margin-bottom: .75rem;
+}
+
+.jumbotron-links {
+  text-align: center;
+
+  a { font-weight: normal; }
 }
