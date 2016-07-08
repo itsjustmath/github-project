@@ -8,18 +8,35 @@
   border: 1px solid $color-wild-sand;
   box-shadow: 0 1px 1px 0 rgba($color-black, .1);
   border-radius: 3px;
-  padding: 1.5rem;
   margin-bottom: 1.5rem;
   transition: box-shadow border .3s;
-  max-height: 138px; // temporary value
 
   &:hover {
-    cursor: pointer;
     border: 1px solid darken($color-wild-sand, .1);
     box-shadow: 0 1px 1px 0 rgba($color-black, .2);
   }
 
   p {
     color: $color-grey-mako;
+    margin-bottom: 0;
   }
+}
+
+.card-body {
+  padding: 1.5rem;
+
+  .icon { margin-bottom: .5rem; }
+}
+
+.card-header {
+  border-bottom: 1px solid $color-wild-sand;
+}
+
+// -------------------------
+// Card Size Variations
+// -------------------------
+
+.card-sm {
+  margin-bottom: 1rem;
+  .card-body { padding: 1rem .75rem; }
 }

@@ -14,4 +14,26 @@
 // Colors
 // -------------------------
 
+// ------------
+// Text Colors
+// ------------
+
 .u-color--white { color: $color-white; }
+
+// ------------
+// Background Colors
+// ------------
+
+.u-bg--wild-sand { background: $color-wild-sand; }
+.u-bg--alabaster { background: $color-alabaster; }
+
+// -------------------------
+// Layout
+// -------------------------
+
+.u-inlineBlock { display: inline-block; }
+
+.u-margin--auto {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -3,13 +3,81 @@
 // Layout
 // --------------------------------------------------------
 
+// -------------------------
+// Responsive Styling / Media Queries
+// -------------------------
+
+// ------------
+// Container / Columns
+// ------------
+
+.container { max-width: 100%; }
+
+.one-third,
+.one-fourth,
+.one-half { width: 100%; }
+
+
+@media (min-width: $tablet-min) {
+  .container { width: 750px; }
+  .one-third,
+  .one-fourth { width: 50%; }
+}
+
+@media (max-width: $tablet-max) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .container { width: 970px; }
+
+  // need for specficity reasons
+  .one-third { width: 33.333333%; }
+  .one-fourth { width: 25%; }
+  .one-half { width: 50%; }
+}
+
+
+
+
+// -------------------------
+// Sections
+// -------------------------
+
 section {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+.section-border { border-bottom: 1px solid $color-mercury; }
+
 // -------------------------
-// Section-specific styles
+// Lists
 // -------------------------
 
-.categories { background: $color-wild-sand; }
+.list-bulleted {
+  padding-left: 0;
+  list-style-type: none;
+
+  &.columns { margin-left: 0; }
+
+  li {
+    padding-left: 15px;
+
+    &:before {
+      content:"\25CF";
+      color: $color-silver;
+      position: relative;
+      left: -10px;
+    }
+  }
+
+  a { font-weight: normal; }
+}
+
+.list-loose {
+  li { margin-bottom: .75rem; }
+}

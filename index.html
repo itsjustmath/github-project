@@ -6,7 +6,7 @@
   <title>Github Project</title>
   <link rel="stylesheet" href="./build/index.css">
 </head>
-<body>
+<body class="home">
   <div class="hero">
     <nav class="masthead">
       <div class="container">
@@ -31,15 +31,17 @@
       </div>
     </div>
   </div>
-  <section class="categories">
+  <section class="u-bg--wild-sand section-border">
     <div class="container">
-      <h2>Help Topics</h2>
+      <h2><img src="./images/question-mark.svg" class="icon-md icon-inline">Help Topics</h2>
       <div class="columns">
         <div class="one-third column">
           <div class="card">
             <div class="card-body u-textAlign--center">
-              [Icon]
-              <h3><a href="">Getting Started</a></h3>
+              <a href="" class="u-inlineBlock">
+                <img src="./images/getting-started.svg" alt="Getting Started" class="u-margin--auto icon icon-md">
+                <h3>Getting Started</h3>
+              </a>
               <p>Browse all articles for getting you setup on Github and on your computer.</p>
             </div>
           </div>
@@ -47,8 +49,10 @@
         <div class="one-third column">
           <div class="card">
               <div class="card-body u-textAlign--center">
-                [Icon]
-                <h3><a href="">Learning Git</a></h3>
+                <a href="" class="u-inlineBlock">
+                  <img src="./images/learning-git.svg" alt="Learning Git" class="u-margin--auto icon icon-md">
+                  <h3>Learning Git</h3>
+                </a>
                 <p>Browse all articles on understanding the in's-and-out's of Git and version control.</p>
               </div>
           </div>
@@ -56,8 +60,10 @@
         <div class="one-third column">
           <div class="card">
               <div class="card-body u-textAlign--center">
-                [Icon]
-                <h3><a href="">Administration</a></h3>
+                <a href="" class="u-inlineBlock">
+                  <img src="./images/administration.svg" alt="Administration" class="u-margin--auto icon icon-md">
+                  <h3>Administration</h3>
+                </a>
                 <p>Browse all articles on setting up and managing organizations and teams.</p>
               </div>
           </div>
@@ -65,8 +71,10 @@
         <div class="one-third column">
           <div class="card">
               <div class="card-body u-textAlign--center">
-                [Icon]
-                <h3><a href="">Using Github.com</a></h3>
+                <a href="" class="u-inlineBlock">
+                  <img src="./images/octocat.svg" alt="Using Github.com" class="u-margin--auto icon icon-md">
+                  <h3>Using Github.com</h3>
+                </a>
                 <p>Browse all articles on the features and offerings of the Github web application.</p>
               </div>
           </div>
@@ -74,8 +82,10 @@
         <div class="one-third column">
           <div class="card">
               <div class="card-body u-textAlign--center">
-                [Icon]
-                <h3><a href="">Collaborating with Github</a></h3>
+                <a href="" class="u-inlineBlock">
+                  <img src="./images/pull-request.svg" alt="Collaborating with Github" class="u-margin--auto icon icon-md">
+                  <h3>Collaborating with Github</h3>
+                </a>
                 <p>Browse all articles for collaborating and managing projects using Github.</p>
               </div>
           </div>
@@ -83,13 +93,89 @@
         <div class="one-third column">
           <div class="card">
               <div class="card-body u-textAlign--center">
-                [Icon]
-                <h3><a href="">Services &amp; Integrations</a></h3>
+                <a href="" class="u-inlineBlock">
+                  <img src="./images/beaker.svg" alt="Services and Integrations" class="u-margin--auto icon icon-md">
+                  <h3>Services &amp; Integrations</h3>
+                </a>
                 <p>Browse all articles on Github Pages, Gists, and third-party services and integrations.</p>
               </div>
           </div>
         </div>
+        <div class="clearfix"></div>
+        <div class="u-textAlign--center">
+          <button class="btn btn-outline" type="button">View All Articles</button>
+        </div>
       </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2><img src="./images/rocket.svg" class="icon-md icon-inline">Quick Start</h2>
+      <div class="columns">
+        <div class="one-fourth column">
+          <div class="card card-sm">
+            <div class="card-header">
+              <a href=""><img src="./images/set-up-git.png" class="img-md img-responsive u-margin--auto" alt="Set up Git"></a>
+            </div>
+            <div class="card-body u-bg--alabaster u-textAlign--center">
+              <h3><a href="">Set up Git</a></h3>
+              <p>Get up and running with Git.</p>
+            </div>
+          </div>
+        </div>
+        <div class="one-fourth column">
+          <div class="card card-sm">
+            <div class="card-header">
+              <a href=""><img src="./images/create-a-repo.png" class="img-md img-responsive u-margin--auto" alt="Create a Repo"></a>
+            </div>
+            <div class="card-body u-bg--alabaster u-textAlign--center">
+              <h3><a href="">Create a Repo</a></h3>
+              <p>Easily start your next project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="one-fourth column">
+          <div class="card card-sm">
+            <div class="card-header">
+              <a href=""><img src="./images/fork-a-repo.png" class="img-md img-responsive u-margin--auto" alt="Fork a Repo"></a>
+            </div>
+            <div class="card-body u-bg--alabaster u-textAlign--center">
+              <h3><a href="">Fork a Repo</a></h3>
+              <p>Build upon existing codebases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="one-fourth column">
+          <div class="card card-sm">
+            <div class="card-header">
+              <a href=""><img src="./images/be-social.png" class="img-md img-responsive u-margin--auto" alt="Be Social"></a>
+            </div>
+            <div class="card-body u-bg--alabaster u-textAlign--center">
+              <h3><a href="">Be Social</a></h3>
+              <p>Collaborate with others on Github.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <hr />
+  </div>
+  <section>
+    <div class="container">
+      <h2><img src="./images/exclamation.svg" class="icon-md icon-inline">Common Issues</h2>
+        <ul class="columns list-bulleted list-loose">
+          <li class="one-third column"><a href="">Why is Git always asking for my <strong>password</strong>?</a></li>
+          <li class="one-third column"><a href="">Dealing with non-fast-forward <strong>errors</strong></a></li>
+          <li class="one-third column"><a href=""><strong>Error</strong>: Repository not found</a></li>
+          <li class="one-third column"><a href="">Do you have custom <strong>plans</strong>?</a></li>
+          <li class="one-third column"><a href="">HTTPS cloning <strong>errors</strong></a></li>
+          <li class="one-third column"><a href="">What <strong>plan</strong> should I choose?</a></li>
+          <li class="one-third column"><a href="">Remove sensitive <strong>data</strong></a></li>
+          <li class="one-third column"><a href="">How do I access my <strong>organization</strong> account?</a></li>
+          <li class="one-third column"><a href="">What are the different access <strong>permissions</strong>?</a></li>
+        </ul>
     </div>
   </section>
   <script src="index.js"></script>
