@@ -2,3 +2,19 @@
 // --------------------------------------------------------
 // Masthead
 // --------------------------------------------------------
+
+.masthead {
+  background: $color-blue-indigo;
+}
+
+.masthead-logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.masthead-nav {
+  float: right;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
