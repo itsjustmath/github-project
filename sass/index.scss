@@ -4,15 +4,15 @@
 // -------------------------
 
 // Libs
-@import "primer-css/index.scss";
-@import "octicons/index.scss";
+@import "primer-css/index";
+@import "octicons/index";
 
 // Base Styles
 @import "base/variables";
 @import "base/utilities";
+@import "base/flexbox";
 @import "base/layout";
 @import "base/typography";
-@import "base/flexbox";
 @import "base/media";
 
 // Components

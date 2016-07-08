@@ -8,8 +8,4 @@ section {
   padding-bottom: 2rem;
 }
 
-// -------------------------
-// Section-specific styles
-// -------------------------
-
-.categories { background: $color-wild-sand; }
+.section-border { border-bottom: 1px solid $color-mercury; }
