@@ -23,12 +23,14 @@
 
 .jumbotron-links {
   text-align: center;
-  opacity: .9;
 
   a {
     font-weight: normal;
     color: $color-white;
     text-decoration: underline;
     letter-spacing: .25px;
+    opacity: .9;
+
+    &:hover { opacity: 1; }
   }
 }
