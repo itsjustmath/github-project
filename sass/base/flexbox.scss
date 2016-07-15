@@ -50,11 +50,6 @@
   flex: $fg $fs $fb;
 }
 
-@mixin flex-pseudo-space {
-  content: '';
-  display: block;
-  @include flex(1);
-}
 .flex,
 .flex-row {
   @include display-flex;

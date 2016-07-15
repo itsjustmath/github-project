@@ -4,6 +4,19 @@
 // --------------------------------------------------------
 
 // -------------------------
+// Flexbox
+// -------------------------
+
+.flex-alignCenter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+// -------------------------
 // Responsive Styling / Media Queries
 // -------------------------
 
